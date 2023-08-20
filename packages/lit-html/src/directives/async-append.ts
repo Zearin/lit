@@ -53,8 +53,8 @@ class AsyncAppendDirective extends AsyncReplaceDirective {
  * values after previous values, similar to the built-in support for iterables.
  * This directive is usable only in child expressions.
  *
- * Async iterables are objects with a [Symbol.asyncIterator] method, which
- * returns an iterator who's `next()` method returns a Promise. When a new
+ * Async iterables are objects with a `[Symbol.asyncIterator]` method, which
+ * returns an iterator whose `next()` method returns a Promise. When a new
  * value is available, the Promise resolves and the value is appended to the
  * Part controlled by the directive. If another value other than this
  * directive has been set on the Part, the iterable will no longer be listened
